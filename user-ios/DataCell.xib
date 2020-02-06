@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DataCell" rowHeight="193" id="QUW-sX-k2Q" customClass="DataCell" customModule="user_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QUW-sX-k2Q" id="orF-OF-Kt8">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="192.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obW-BG-waw">
+                        <rect key="frame" x="16" y="11" width="96.5" height="171"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HS-NX-4kv">
+                        <rect key="frame" x="120.5" y="11" width="238.5" height="171"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4HS-NX-4kv" firstAttribute="leading" secondItem="obW-BG-waw" secondAttribute="trailing" constant="8" id="7LG-xD-Yu0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="obW-BG-waw" secondAttribute="bottom" id="Oup-eN-Mm5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4HS-NX-4kv" secondAttribute="trailing" id="UnM-V8-dly"/>
+                    <constraint firstItem="obW-BG-waw" firstAttribute="trailing" secondItem="orF-OF-Kt8" secondAttribute="centerX" multiplier="0.6" id="ehe-R2-dz9"/>
+                    <constraint firstItem="4HS-NX-4kv" firstAttribute="top" secondItem="orF-OF-Kt8" secondAttribute="topMargin" id="mot-Dt-mmH"/>
+                    <constraint firstItem="obW-BG-waw" firstAttribute="top" secondItem="orF-OF-Kt8" secondAttribute="topMargin" id="r1H-pb-pPR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4HS-NX-4kv" secondAttribute="bottom" id="sVS-VN-ihu"/>
+                    <constraint firstItem="obW-BG-waw" firstAttribute="leading" secondItem="orF-OF-Kt8" secondAttribute="leadingMargin" id="vHD-fu-Tjm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="keyLabel" destination="obW-BG-waw" id="oDg-Uy-Fkx"/>
+                <outlet property="valueLabel" destination="4HS-NX-4kv" id="HRf-Wh-l6g"/>
+            </connections>
+            <point key="canvasLocation" x="13.6" y="228.03598200899552"/>
+        </tableViewCell>
+    </objects>
+</document>
